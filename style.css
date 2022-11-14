@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: url("./nlw/assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    background-color: #121214;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header{
+    padding-top: 32px;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    padding-top: 32px;
+    background-image: linear-gradient(45deg, #9572Fc 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div{
+    animation: from_top 1s;
+}
+
+
+section div{
+    background-color: #2A2634;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    transition: transform .3s;
+    transition-delay: transform .3s;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+.delay_3{
+    animation: left_animation 3s backwards;
+    animation-delay: 1.4s;
+}
+.delay_2{
+    animation: left_animation 3s backwards;
+    animation-delay: 1.8s;
+}
+.delay_1{
+    animation: left_animation 3s backwards;
+    animation-delay: 2.2s;
+}
+
+.games_list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel_list img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443e54;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: bottom_animation 3s backwards;
+    animation-delay: .4s;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572Fc 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+  
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{  
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+
+}
+
+/*Animations for the page*/
+
+
+@keyframes from_top{
+    0%{
+        opacity: 0;
+        transform: translatey(-10vh);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+@keyframes left_animation{
+    0%{
+        opacity: 0;
+        transform: translatey(10vh);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+@keyframes bottom_animation{
+    0%{
+        opacity: 0;
+        transform: translatex(-50vw);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
